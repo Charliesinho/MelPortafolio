@@ -1,0 +1,120 @@
+.app__intro {
+    background-color: var(--secondary-color);
+
+    width: 100%;
+    min-height: 100vh;
+
+    position: fixed;
+    top: -100vh;
+
+    z-index: 10;
+
+    animation: intro 3s ease;
+    
+
+    .app__introName {
+        position: relative;
+        top: 47vh;
+        left: 48%;
+        font-size: 40px;
+        font-weight: bolder;
+        animation: introBack 2s ease;
+
+        .app__introNameOne {
+            position: relative;   
+            animation: introNameOne 1s ease;         
+        }
+
+        .app__introNameTwo {
+            position: relative;   
+            animation: introNameTwo 1s ease;         
+        }
+    }
+}
+
+.app__introTail {
+    background-color: var(--gray-color);
+
+    width: 100%;
+    min-height: 100vh;
+
+    position: fixed;
+    top: -100vh;
+
+    z-index: 9;
+
+    animation: introTail 3.1s ease;
+}
+
+@keyframes introTail {
+    0% {
+        top: 0;        
+    }  
+    
+    80% {
+        top: 0;        
+    }  
+    90% {
+        top: 0;        
+    } 
+    100% {
+        top: -100vh;        
+    }
+  }
+
+  @keyframes intro {
+    0% {
+        top: 0;
+        background-color: black;
+    }  
+    60% {
+        background-color: black;
+    }  
+    80% {
+        top: 0;
+        background-color: var(--secondary-color);
+    }  
+    90% {
+        top: 0;        
+    } 
+    100% {
+        top: -100vh;
+        background-color: var(--secondary-color);
+    }
+  }
+
+  @keyframes introBack {
+    0% {
+        color: var(--secondary-color);
+    }  
+    80% {
+        color: var(--secondary-color);
+    }  
+    100% {
+        color: black;
+    }
+  }
+
+  @keyframes introNameOne {
+    0% {
+        top: 100vh;
+    }  
+    50% {
+        top: 100vh;
+    }  
+    100% {
+        top: 0vh;
+    }
+  }
+
+  @keyframes introNameTwo {
+    0% {
+        top: -100vh;
+    }  
+    50% {
+        top: -100vh;
+    }  
+    100% {
+        top: 0vh;
+    }
+  }
